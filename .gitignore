@@ -1,0 +1,25 @@
+### JetBrains IDE (IntelliJ IDEA) ###
+# 核心忽略规则
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# 忽略所有模块文件
+**/modules.xml
+**/*.id
+
+# 忽略用户配置和工作区文件
+**/workspace.xml
+**/tasks.xml
+**/usage.statistics.xml
+**/dictionaries/
+
+# 忽略历史记录和缓存
+**/history/
+**/shelf/
+
+# 忽略 Gradle 项目自动生成的文件
+.gradle/
+build/
+out/
