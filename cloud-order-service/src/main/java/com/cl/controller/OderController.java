@@ -1,6 +1,7 @@
 package com.cl.controller;
 
 import com.cl.feign.PaymentApi;
+import com.cl.utils.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.context.annotation.Lazy;
@@ -22,6 +23,7 @@ public class OderController {
 
     @GetMapping("order")
     public void order() {
+        System.out.println("当前用户id：" + UserContext.getUserId());
         paymentApi.pay();
     }
 

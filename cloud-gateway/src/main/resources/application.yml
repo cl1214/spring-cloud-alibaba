@@ -18,3 +18,15 @@ spring:
             - Path=/api/orderService/**
           filters:
             - StripPrefix=2
+        - id:  cloud-user-service
+          uri: lb://cloud-user-service
+          predicates:
+            - Path=/api/userService/**
+          filters:
+            - StripPrefix=2
+# application.yml
+  main:
+    web-application-type: reactive
+route:
+  whitePath:
+    - /user/login

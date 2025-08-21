@@ -2,6 +2,7 @@ package com.cl.payment.controller;
 
 import com.cl.payment.entity.Pay;
 import com.cl.payment.service.PayService;
+import com.cl.utils.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -41,6 +42,7 @@ public class PayController {
 
     @GetMapping("pay")
     public void pay() {
+        System.out.println("当前用户id：" + UserContext.getUserId());
         System.out.println("付款成功");
     }
 

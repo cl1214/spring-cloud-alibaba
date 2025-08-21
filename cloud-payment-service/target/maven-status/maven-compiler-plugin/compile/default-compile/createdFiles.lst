@@ -1,6 +1,0 @@
-com\cl\payment\PaymentApplication.class
-com\cl\payment\controller\PayController.class
-com\cl\payment\service\impl\PayServiceImpl.class
-com\cl\payment\service\PayService.class
-com\cl\payment\repository\PayDAO.class
-com\cl\payment\entity\Pay.class
